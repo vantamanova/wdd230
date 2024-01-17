@@ -14,3 +14,5 @@ const year = new Date().toLocaleDateString("en-US", {year: "numeric"});
 
 info.insertAdjacentHTML('beforebegin', `<p> &copy ${year} </p>`);
 info.insertAdjacentHTML('afterend', '<p>UAE</p>');
+
+/// djshjd///
