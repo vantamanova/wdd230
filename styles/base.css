@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Old+Standard+TT&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Old+Standard+TT&display=swap");
 
 header {
     display: grid;
@@ -10,7 +10,7 @@ header {
 
 #profile {
     grid-column: 1 / 2;
-    width: 40%;
+    width: 50%;
     justify-self: right;
     padding: 30px 0px 30px 0px;
 }
@@ -19,19 +19,35 @@ h1 {
     grid-column: 2 / 4;
     justify-self: left;
     font-family: "Bebas Neue";
-    padding: 20px 0px 20px 30px;
+    padding: 20px 0px 20px 10px;
     align-self: center;
     letter-spacing: 5px;
-    font-size: 400%;
-
+    font-size: 150%;
 }
 
 nav {
+    margin: auto;
+    background-color: #5C7C6F;
+    max-width: 1500px;
+}
+
+nav ul {
     display: grid;
     margin: auto;
     padding: 20px 0px 20px 0px;
-    background-color: #5C7C6F;
-    max-width: 1500px;
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    color: #F6FFF8;
+    padding: 5px;
+    margin: auto;
+    font-family: "Old Standard TT";
+}
+
+nav a:hover {
+    border: 1px solid white;
 }
 
 a {
@@ -39,7 +55,8 @@ a {
     font-family: "Old Standard TT";
     color: #F6FFF8;
     padding: 5px;
-
+    text-align: center;
+    text-decoration: none;
 }
 
 main {
