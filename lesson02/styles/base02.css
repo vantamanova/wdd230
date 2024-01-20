@@ -1,0 +1,86 @@
+@media (min-width: 800px) {
+
+    h1 {
+        font-size: 70px;
+    }
+
+    h2 {
+        font-size: 60px;
+        margin-bottom: 60px;
+        padding-bottom: 40px;
+        margin-bottom: 60px;
+    }
+
+    h3 {
+        font-size: 25px;
+        letter-spacing: 1px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    a {
+        font-family: "Old Standard TT";
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    li {
+        list-style-type: none;
+        padding: 0px 30px 20px 30px;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section:nth-of-type(1) {
+        background-color: white;
+        margin: auto;
+        border: 1px solid black;
+        margin-top: 0px;
+        margin-bottom: 30px;
+        box-shadow: 2px 2px 10px 1px #5C7C6F;
+    }
+
+    section:nth-of-type(2) {
+        width: 100%;
+        background-color: white;
+        margin: auto;
+        border: 1px solid black;
+        margin-bottom: 30px;
+        box-shadow: 2px 2px 10px 1px #5C7C6F;
+    }
+
+    section:nth-of-type(3) {
+        width: 100%;
+        background-color: white;
+        margin: auto;
+        border: 1px solid black;
+        margin-bottom: 30px;
+        margin-top: 0;
+        box-shadow: 2px 2px 10px 1px #5C7C6F;
+    }
+
+    footer {
+        margin: auto;
+        padding: 20px 0px 20px 0px;
+        background-color: #5C7C6F;
+        max-width: 1500px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #lastModified {
+        padding-top: 20px;
+        grid-column: 2/3;
+    }
+}
