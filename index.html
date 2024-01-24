@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Home page for WDD 230 - Web Frontend Development course. Contains the course assignments of Vera Antamanova">
-    <meta name="author" content="Vera Antamanova">
     <title>Vera Antamanova - WDD 230 - Web Frontend Development</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="favicon.ico">
+    <meta name="description"
+        content="Home page for WDD 230 - Web Frontend Development course. Contains the course assignments of Vera Antamanova">
+    <meta name="author" content="Vera Antamanova">
     <meta property="og:title" content="Vera Antamanova - WDD 230 - Web Frontend Development">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://dubai.ae/">
@@ -24,15 +24,14 @@
         <img id="profile" src="images/profileimg.jpg" alt="Profile image">
         <h1>Vera Antamanova</h1>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
-            <li><a href="chamber/">Chamber</a></li>
-            <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
-            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/9?lang=eng&id=p6#p6"
-                    target="_blank">Scripture</a></li>
-        </ul>
+    <button id="menu"></button>
+    <nav class="navigation">
+        <a href="#">Home</a>
+        <a href="lesson03/chamber-site-plan.html">Site Plan</a>
+        <a href="chamber/">Chamber</a>
+        <a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a>
+        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/9?lang=eng&id=p6#p6"
+            target="_blank">Scripture</a>
     </nav>
     <main>
         <h2>WDD 230: Web Frontend Development</h2>
@@ -58,7 +57,7 @@
                     <a class="sectiontext">|</a>
                     <a class="sectiontext" href="https://codepen.io/vantamanova/pen/ExMXrBQ">CSS Pseudo-elements</a>
                     <a class="sectiontext">|</a>
-                    <a class="sectiontext" href="hhttps://codepen.io/vantamanova/pen/KKEvNjM">"Hamburger" Menu</a>
+                    <a class="sectiontext" href="https://codepen.io/vantamanova/pen/KKEvNjM">"Hamburger" Menu</a>
                 </li>
                 <li>
                     <a class="sectiontext">04:</a>
@@ -86,10 +85,14 @@
         </section>
         <section class="card">
             <h3>Information</h3>
-            <p class="sectiontext">Location</p>
-            <p class="sectiontext">Weather</p>
-            <p class="sectiontext">Number of visits</p>
+            <p class="sectiontext active">Dubai, UAE</p>
+            <p class="sectiontext">76°F - Sunshine</p>
+            <p class="sectiontext">Page Visits: </p>
         </section>
+        <iframe class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462561.6574537445!2d55.22748795!3d25.076022449999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDubai!5e0!3m2!1sen!2sae!4v1706001586738!5m2!1sen!2sae"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
     <footer>
         <!--Need to figure out how to make it work properly-->
@@ -97,6 +100,7 @@
         <p id="lastModified"></p>
     </footer>
     <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburgermenu.js"></script>
 </body>
 
 </html>

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Old+Standard+TT&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Old+Standard+TT&display=swap');
 
 body {
     max-width: 1500px;
@@ -15,8 +15,7 @@ header {
 }
 
 h1 {
-    grid-column: 2 / 4;
-    justify-self: left;
+    text-align: center;
     font-family: "Bebas Neue";
     padding-top: 30px;
     margin-bottom: 0;
@@ -71,7 +70,9 @@ h4 {
 a {
     font-family: "Old Standard TT";
     color: black;
-    text-align: center;
+    justify-content: flex-end;
+    padding-left: 30px;
+    padding-bottom: 20px;
     text-decoration: none;
     font-size: 20px;
 }
