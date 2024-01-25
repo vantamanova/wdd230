@@ -83,6 +83,16 @@ p {
     padding: 1em;
 }
 
+li {
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color-on-white);
+
+}
+
+ul {
+    list-style-type: none;
+}
+
 .colors {
     width: 100%;
     min-width: 350px;
