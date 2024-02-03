@@ -19,8 +19,8 @@
 
 <body>
     <header>
-        <img id="logo" src="images/hero_img.jpg" alt="Logo image">
-        <h1>Dubai Chamber of commerce</h1>
+        <!-- <img id="logo" src="images/logo.jpg" alt="Logo image">-->
+        <h1>Dubai Chamber of Commerce</h1>
 
         <button id="menu"></button>
         <nav class="navigation">
@@ -31,8 +31,9 @@
         </nav>
     </header>
     <main>
-        <img id="hero_img" src="images/hero_img.jpg" alt="Hero image">
-        <a class="action_call" href="#">Join Camber</a>
+
+        <img id="hero" src="images/hero_img.jpg" alt="Hero image">
+        <a class="action_call" href="#">Join Chamber</a>
 
         <section class="events">
             <h3>Events Section</h3>
@@ -43,44 +44,58 @@
 
         <section class="weather">
             <img id="weather_img" src="images/weather_img.jpg" alt="Weather image">
-            <h3>Weather</h3>
-            <p class="sectiontext active">Dubai, UAE</p>
-            <p class="sectiontext">76°F - Sunshine</p>
+            <div>
+                <h3>Weather</h3>
+                <p class="sectiontext active">Dubai, UAE</p>
+                <p class="sectiontext">76°F - Sunshine</p>
+            </div>
         </section>
 
         <h2>Member Spotlights</h2>
+        <div class="card">
+            <section>
+                <h3>Name</h3>
+                <hr>
+                <div>
+                    <p>Quote</p>
+                    <p>Email</p>
+                    <p>Phone number</p>
+                    <a class="website" href="#">Website</a>
+                </div>
+            </section>
 
-        <section class="card">
-            <h3>Name</h3>
-            <p>Quote</p>
-            <p>Email</p>
-            <p>Phone number</p>
-            <a class="website" href="#">Website</a>
-        </section>
+            <section>
+                <h3>Name</h3>
+                <hr>
+                <div>
+                    <p>Quote</p>
+                    <p>Email</p>
+                    <p>Phone number</p>
+                    <a class="website" href="#">Website</a>
+                </div>
+            </section>
 
-        <section class="card">
-            <h3>Name</h3>
-            <p>Quote</p>
-            <p>Email</p>
-            <p>Phone number</p>
-            <a class="website" href="#">Website</a>
-        </section>
-
-        <section class="card">
-            <h3>Name</h3>
-            <p>Quote</p>
-            <p>Email</p>
-            <p>Phone number</p>
-            <a class="website" href="#">Website</a>
-        </section>
+            <section>
+                <h3>Name</h3>
+                <hr>
+                <div>
+                    <p>Quote</p>
+                    <p>Email</p>
+                    <p>Phone number</p>
+                    <a class="website" href="#">Website</a>
+                </div>
+            </section>
+        </div>
     </main>
     <footer>
         <p id="info"> 2024 Dubai Chamber | Vera Antamanova | WDD230 Project</p>
-        <p>email</p>
-        <p>Phone number</p>
-        <p>location</p>
+        <p>dubaichamber@gmail.com</p>
+        <p>050 357 00 00</p>
+        <p>Dubai, UAE</p>
         <p id="lastModified"></p>
     </footer>
+    <script src="scripts/hamburgermenu.js"></script>
+    <script src="scripts/getdates.js"></script>
 
 </body>
 

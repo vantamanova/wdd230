@@ -2,11 +2,11 @@
 
 :root {
     /* change the values below to your colors from your palette */
-    --color1: #6B9080;
-    --color2: #A4C3B2;
-    --color3: #CCE3DE;
-    --color4: #EAF4F4;
-    --color5: #F6FFF8;
+    --color1: #000000;
+    --color2: #8C8C85;
+    --color3: #C1D0D7;
+    --color4: #C1C6CA;
+    --color5: #FFFFFF;
 
     /* change the values below to your chosen font(s) */
     --heading-font: 'Montserrat', sans-serif;
@@ -21,11 +21,11 @@
     /* paragraph text on a white background */
     --paragraph-color-on-color: black;
     /* paragraph text on a colored background */
-    --paragraph-background-color: #A4C3B2;
+    --paragraph-background-color: #C1C6CA;
     --nav-link-color: black;
-    --nav-background-color: #6B9080;
-    --nav-hover-link-color: black;
-    --nav-hover-background-color: #CCE3DE;
+    --nav-background-color: #C1D0D7;
+    --nav-hover-link-color: white;
+    --nav-hover-background-color: #8C8C85;
 }
 
 
