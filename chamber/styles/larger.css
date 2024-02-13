@@ -1,4 +1,8 @@
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
+
+    .switch {
+        top: 6rem;
+    }
 
     #menu {
         display: none;
