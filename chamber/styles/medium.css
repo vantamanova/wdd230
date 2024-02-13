@@ -3,8 +3,6 @@
         grid-template-columns: 1fr 1fr;
     }
 
-    .switch {}
-
     #hero,
     .action_call {
         grid-column: 1/3;
