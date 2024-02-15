@@ -86,10 +86,10 @@ input:checked+.slider:before {
 
 .dark-mode {
     background-color: black;
+}
 
-    h1 {
-        color: white;
-    }
+.dark-mode h1 {
+    color: white;
 }
 
 #menu {
