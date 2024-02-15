@@ -1,7 +1,8 @@
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
 
     .switch {
-        top: 5rem;
+        top: 6.5rem;
+        right: 10.5rem;
     }
 
     #menu {
