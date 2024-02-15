@@ -45,7 +45,9 @@
     }
 
     .herolabel {
-        left: 400px;
+        top: 250px;
+        left: 120px;
+        padding: 1rem;
     }
 
     main h2 {
