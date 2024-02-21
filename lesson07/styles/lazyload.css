@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine&family=Montserrat:wght@800&display=swap');
+
+body {
+    margin: auto;
+    max-width: 1500px;
+}
+
+h1 {
+    text-align: center;
+    grid-column: 1/2;
+    padding-left: 20px;
+    font-family: Montserrat;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 400px;
+}
+
+img {
+    width: 100%;
+    background: black;
+    animation: fade 10s;
+}
+
+footer {
+    text-align: center;
+    font-family: Domine;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
