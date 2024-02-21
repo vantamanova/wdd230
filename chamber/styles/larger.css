@@ -30,7 +30,7 @@
         grid-gap: 40px;
     }
 
-    #hero,
+    .hero,
     .action_call {
         grid-column: 1/4;
     }
