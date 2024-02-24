@@ -55,4 +55,14 @@
     .card section {
         background-color: rgb(193, 208, 215, 0.4);
     }
+
+    .images {
+        margin: auto;
+        grid-column: 2/3;
+        grid-row: 1/4;
+    }
+
+    .images img:hover {
+        box-shadow: 0 0 50px black;
+    }
 }
