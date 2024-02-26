@@ -176,6 +176,10 @@ picture {
     height: auto;
 }
 
+picture img {
+    width: 100%;
+}
+
 .action_call {
     padding: 10px;
     background-color: white;
@@ -209,14 +213,12 @@ section,
     grid-column: 1/2;
     grid-row: 3/4;
     background-color: rgb(193, 208, 215, 0.5);
-    ;
-
 }
 
 
 #weather_img {
     grid-column: 1/2;
-    width: 100%;
+    width: 70%;
     margin: auto;
     margin-left: 50px;
     max-width: 1500px;
@@ -246,8 +248,28 @@ section,
     font-family: Domine;
 }
 
-.weather div p:nth-child(4) {
-    padding-bottom: 50px;
+
+label {
+    display: block;
+    font-family: Domine;
+}
+
+input,
+label {
+    margin: 0.1rem;
+    font-family: Domine;
+    box-shadow: none;
+}
+
+input {
+    width: 70%;
+    text-align: center;
+}
+
+div .weather {
+    display: flex;
+    flex-direction: row;
+    box-shadow: none;
 }
 
 h2 {
@@ -255,7 +277,6 @@ h2 {
     text-align: center;
     margin-bottom: 50px;
     font-family: Montserrat;
-
 }
 
 h3 {

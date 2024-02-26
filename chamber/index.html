@@ -42,7 +42,7 @@
             <picture>
                 <source srcset="images/wdd230-small.webp" media="(max-width: 500px)">
                 <source srcset="images/wdd230-medium.webp" media="(max-width: 1000px)">
-                <img src="images/wdd230-large.webp" alt="beach hero image" width="2" height="1">
+                <img src="images/wdd230-large.webp" alt="beach hero image">
             </picture>
         </div>
         <!-- <img id="hero" src="images/hero_img.jpg" alt="Hero image"> -->
@@ -59,9 +59,15 @@
             <img id="weather_img" src="images/weather_img.webp" alt="Weather image">
             <div>
                 <h3>Weather</h3>
-                <p class="sectiontext active">Dubai, UAE</p>
-                <p class="sectiontext">76°F - Sunshine</p>
-                <p class="sectiontext windChill"></p>
+                <div class="weather"><label for="temperature">Temperature:</label>
+                    <input type="text" id="temperature" name="temperature" />
+                </div>
+                <div class="weather"><label for="windspeed">Windspeed:</label>
+                    <input type="text" id="windspeed" name="windspeed" />
+                </div>
+                <p><button class="button" type="button">Wind Chill</button></p>
+                <p><span class="label">Wind Chill: </span><span class="sectiontext windChill"></span></p>
+
 
             </div>
         </section>

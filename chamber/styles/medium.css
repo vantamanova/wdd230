@@ -8,6 +8,11 @@
         right: 0.8rem;
     }
 
+    .dark-mode .card section {
+        background-color: white;
+        color: black;
+    }
+
     .hero,
     .action_call {
         grid-column: 1/3;
