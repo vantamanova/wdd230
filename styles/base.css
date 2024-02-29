@@ -217,3 +217,8 @@ footer {
     background-color: #5C7C6F;
     max-width: 1500px;
 }
+
+.record p {
+    color: #000;
+    padding: 1rem;
+}

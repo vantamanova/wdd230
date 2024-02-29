@@ -90,4 +90,8 @@
     #lastModified {
         grid-column: 2/3;
     }
+
+    section .record {
+        grid-column: 1/3;
+    }
 }
