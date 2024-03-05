@@ -8,8 +8,3 @@ const options = {
 
 const date = new Date().toLocaleDateString("en-US", options);
 modification.innerHTML = `Last Modification: ${date}`
-
-let inputDate = document.querySelector('#date');
-inputDate.value = Date.now();
-
-console.log(inputDate.value);
