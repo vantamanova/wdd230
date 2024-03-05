@@ -492,3 +492,10 @@ ul {
 .dark-mode .f1 label {
     color: white;
 }
+
+.record {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+    text-align: center;
+}

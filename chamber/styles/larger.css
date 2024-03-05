@@ -88,4 +88,8 @@
         padding-left: 50px;
     }
 
+    .record {
+        grid-column: 1/4;
+    }
+
 }
