@@ -1,0 +1,35 @@
+{
+    "wardInfornation" :
+    {
+        "familyName": "Antamanov",
+        "moveInDate": "2023-05-17",
+        "numberOfPeople": 4,
+        "visitedByBishopric": true,
+        "familyMembers":
+        [
+            {
+                "name": "Vera Antamanova",
+                "gender": "Female",
+                "birthdate": "1990-05-25"
+            },
+
+            {
+                "name": "Sergai Antamanov",
+                "gender": "Male",
+                "birthdate": "1898-08-30"
+            },
+
+            {
+                "name": "Sophia Antamanova",
+                "gender": "Female",
+                "birthdate": "2018-04-17"
+            },
+
+            {
+                "name": "Daniel Antamanov",
+                "gender": "Male",
+                "birthdate": "2016-02-17"
+            }
+        ]
+    }
+}
