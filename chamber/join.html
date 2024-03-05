@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of commerce</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <meta name="description" content="Home page for Dubai Chamber of commerce">
+    <meta name="author" content="Vera Antamanova">
+    <meta property="og:title" content="Dubai Chamber of commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://dubai.ae/">
+    <meta property="og:url" content="https://vantamanova.github.io/wdd230/">
+</head>
+
+<body>
+    <header>
+        <!-- <img id="logo" src="images/logo.jpg" alt="Logo image">-->
+        <h1>Dubai Chamber of Commerce</h1>
+
+        <button id="menu"></button>
+
+        <!-- Rounded switch -->
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+        <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="#">Directory</a>
+            <a href="#">Join</a>
+        </nav>
+    </header>
+    <main>
+        <form method="get" action="thankyou.html" class="f1">
+            <label>First name* <input type="text" id="fname" name="fname" required></label>
+            <label>Last name* <input type="text" id="lname" name="lname" required></label>
+            <label>Title or position* <input type="text" id="position" name="position" pattern="[a-zA-Z_\-]{7,}"
+                    required></label>
+            <label>Email* <input type="email" id="email" name="email" placeholder="name@gmail.com" required></label>
+            <label>Mobile phone number* <input type="tel" id="phone" name="phone" required></label>
+            <label>Business/organization's name* <input type="text" id="org" name="org" required></label>
+            <label>Membership level*
+                <select name="membership">
+                    <option value="">Please Select &#9662;</option>
+                    <option value="nonProfit">NP Membership</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+            </label>
+            <label>Business/organization's description <textarea placeholder="Enter the description" id="description"
+                    name="description"></textarea></label>
+            <label><input type="hidden" id="date" name="date"></label>
+            <input type="submit" value="Send your form">
+        </form>
+
+        <div class="membership">
+            <h2>Membership levels</h2>
+
+            <section>
+                <h3>NP Membership</h3>
+                <p>Description: Designed for non-profit organizations.</p>
+                <p>Cost: No membership fee.</p>
+                <p>Benefits: </p>
+                <ul>
+                    <li>Access to networking events.</li>
+                    <li>Free or discounted training programs.</li>
+                    <li>Participation in special non-profit focused workshops.</li>
+                    <li>Opportunities for collaboration with other non-profit organizations.</li>
+                    <li>Access to resources for fundraising and grant opportunities.</li>
+                    <li>Visibility through the Chamber's non-profit directory.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Bronze Membership</h3>
+                <p>Description: Entry-level membership for small businesses.</p>
+                <p>Cost: $1,000 per year.</p>
+                <p>Benefits: </p>
+                <ul>
+                    <li>Invitation to exclusive networking events.</li>
+                    <li>Access to discounted training and development programs.</li>
+                    <li>Listing in the Chamber's online business directory.</li>
+                    <li>Discounts on Chamber-sponsored events and conferences.</li>
+                    <li>Opportunities to participate in trade missions and exhibitions.</li>
+                    <li>Access to market research reports and business intelligence.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Silver Membership</h3>
+                <p>Description: Intermediate membership level suitable for growing businesses.</p>
+                <p>Cost: $3,000 per year.</p>
+                <p>Benefits: </p>
+                <ul>
+                    <li>Priority invitation to high-profile networking events.</li>
+                    <li>Enhanced visibility through sponsorships and advertising opportunities.</li>
+                    <li>Access to specialized training workshops and seminars.</li>
+                    <li>Discounts on Chamber-affiliated services such as document attestation and certification.</li>
+                    <li>Access to government liaison services for business support.</li>
+                    <li>Preferential rates for international trade missions and business matchmaking services.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Gold Membership</h3>
+                <p>Description: Premium membership tailored for established corporations.</p>
+                <p>Cost: $10,000 per year.</p>
+                <p>Benefits: </p>
+                <ul>
+                    <li>VIP access to exclusive networking events with top industry leaders and government officials.
+                    </li>
+                    <li>Customized advertising and promotional opportunities through Chamber channels.</li>
+                    <li>Priority access to high-demand training programs and executive education courses.</li>
+                    <li>Dedicated account manager for personalized assistance and support.</li>
+                    <li>Complimentary access to premium services such as legal consultation and market intelligence
+                        reports.</li>
+                    <li>Elite invitations to international business delegations and VIP receptions.</li>
+                </ul>
+            </section>
+
+
+        </div>
+
+    </main>
+    <footer>
+        <p id="info"> 2024 Dubai Chamber | Vera Antamanova | WDD230 Project</p>
+        <p>dubaichamber@gmail.com</p>
+        <p>050 357 00 00</p>
+        <p>Dubai, UAE</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/hamburgermenu.js"></script>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/darkmore.js"></script>
+
+</body>
+
+</html>

@@ -413,3 +413,82 @@ ul {
     background: #81adc2;
     color: white !important
 }
+
+/* ------------------ FORM F1------------------ */
+
+.f1 {
+    margin-top: 50px;
+}
+
+.membership {
+    margin-top: 50px;
+}
+
+.f1 label {
+    display: block;
+    padding: 1rem;
+    color: black;
+    font-size: .9rem;
+    width: 100%;
+}
+
+.f1 input[type=text],
+.f1 input[type=tel],
+.f1 input[type=email],
+.f1 select,
+.f1 textarea {
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .8rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+    text-align: left;
+    box-shadow: inset 2px 2px 5px #BABECC, inset -5px -5px 10px white;
+    transition: all 0.2s ease-in-out;
+}
+
+.f1 input[type="submit"] {
+    border: none;
+    background-color: #81adc2;
+    color: white;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 100%;
+    margin: -1rem 2rem;
+    max-width: 400px;
+    box-shadow: 1px 1px 4px #999;
+}
+
+.f1 input:required {
+    border-left: solid 3px red;
+}
+
+.f1 input:required:valid {
+    border-left: solid 3px green;
+}
+
+.membership h2 {
+    margin-top: 100px;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.membership section {
+    padding: 20px;
+}
+
+.membership ul {
+    list-style: circle;
+}
+
+.dark-mode .membership h2 {
+    color: white;
+}
+
+.dark-mode .f1 label {
+    color: white;
+}

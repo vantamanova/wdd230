@@ -80,4 +80,12 @@
         background-color: white;
     }
 
+    .membership {
+        grid-column: 2/4;
+    }
+
+    .membership h2 {
+        padding-left: 50px;
+    }
+
 }
