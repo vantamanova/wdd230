@@ -1,0 +1,128 @@
+{
+    "companies":
+    [
+        {
+            "name":"TechWave Solutions",
+            "address":"Sheikh Zayed Road, Dubai",
+            "phone":"+971 4 123 4567",
+            "website":"www.techwavesolutions.ae",
+            "image":"chamber/images/techWaveSolutions.webp",
+            "membership ":"Gold",
+            "date":"March 02, 2024"
+        },
+
+        {
+            "name":"EcoScape Innovations",
+            "address":"Jumeirah Lakes Towers, Dubai",
+            "phone":"+971 4 234 5678",
+            "website":"www.ecoscapeinnovations.com",
+            "image":"chamber/images/ecoScapeInnovations.webp",
+            "membership ":"Silver",
+            "date":"July 5, 2023"
+        },
+
+        {
+            "name":"Skyline Ventures",
+            "address":"Downtown Dubai, Dubai",
+            "phone":"+971 4 345 6789",
+            "website":"www.skylineventures.ae",
+            "image":"chamber/images/skylineVentures.webp",
+            "membership ":"Bronze",
+            "date":"November 18, 2023"
+        },
+
+        {
+            "name":"GlobalTech Solutions",
+            "address":"Dubai Silicon Oasis, Dubai",
+            "phone":"+971 4 456 7890",
+            "website":"www.globaltechsolutions.ae",
+            "image":"chamber/images/globalTechSolutions.webp",
+            "membership ":"Gold",
+            "date":"September 9, 2023"
+        },
+
+        {
+            "name":"GreenEnergy Innovations",
+            "address":"Dubai Investment Park, Dubai",
+            "phone":"+971 4 567 8901",
+            "website":"www.greenenergyinnovations.com",
+            "image":"chamber/images/greenEnergyInnovations.webp",
+            "membership ":"Bronze",
+            "date":"May 20, 2023"
+        },
+
+        {
+            "name":"BlueSky Logistics",
+            "address":"Jebel Ali Free Zone, Dubai",
+            "phone":"+971 4 678 9012",
+            "website":"www.blueskylogistics.ae",
+            "image":"chamber/images/blueSkyLogistics.webp",
+            "membership ":"Silver",
+            "date":"February 3, 2024"
+        },
+
+        {
+            "name":"InfiniteTech Solutions",
+            "address":"Dubai Internet City, Dubai",
+            "phone":"+971 4 789 0123",
+            "website":"www.infinitetechsolutions.ae",
+            "image":"chamber/images/infiniteTechSolutions.webp",
+            "membership ":"Gold",
+            "date":"August 14, 2023"
+        },
+
+        {
+            "name":"NatureFusion",
+            "address":"Al Barsha, Dubai",
+            "phone":"+971 4 890 1234",
+            "website":"www.naturefusion.ae",
+            "image":"chamber/images/natureFusion.webp",
+            "membership ":"NP",
+            "date":"June 30, 2023"
+        },
+
+        {
+            "name":"Xcelerate Technologies",
+            "address":"Dubai Media City, Dubai",
+            "phone":"+971 4 901 2345",
+            "website":"www.xceleratetechnologies.ae",
+            "image":"chamber/images/xcelerateTechnologies.webp",
+            "membership ":"Silver",
+            "date":"October 8, 2023"
+        },
+
+        {
+            "name":"SmartGlobe Solutions",
+            "address":"Business Bay, Dubai",
+            "phone":"+971 4 012 3456",
+            "website":"www.smartglobesolutions.ae",
+            "image":"chamber/images/smartGlobeSolutions.webp",
+            "membership":"Bronze",
+            "date":"April 17, 2023"
+        },
+
+        {
+            "name":"Azure Innovations",
+            "address":"Dubai Marina, Dubai",
+            "phone":"+971 4 123 4567",
+            "website":"www.azureinnovations.ae",
+            "image":"chamber/images/azureInnovations.webp",
+            "membership ":"Gold",
+            "date":"December 22, 2023"
+        },
+
+        {
+            "name":"SwiftCargo Logistics",
+            "address":"Dubai South, Dubai",
+            "phone":"+971 4 234 5678",
+            "website":"www.swiftcargologistics.ae",
+            "image":"chamber/images/swiftCargoLogistics.webp",
+            "membership ":"Bronze",
+            "date":"January 9, 2024"
+        }
+
+
+       
+    ]
+    
+}
