@@ -7,7 +7,7 @@ async function getProphetData(url) {
     const data = await response.json();
     console.table(data.prophets);
     displayProphets(data.prophets);
-}
+} 
 
 const displayProphets = (prophets) => {
     prophets.forEach((prophet) => {
