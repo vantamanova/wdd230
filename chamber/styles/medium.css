@@ -80,4 +80,19 @@
         margin-top: 100px;
         grid-column: 1/3;
     }
+
+    .cards,
+    .menu {
+        grid-column: 1/3;
+    }
+
+    .list section {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .list section h3 {
+        font-size: x-small;
+    }
+
 }

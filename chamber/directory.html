@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber of commerce</title>
+    <title>Directory page for Dubai Chamber of commerce</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="favicon.ico">
-    <meta name="description" content="Home page for Dubai Chamber of commerce">
+    <meta name="description" content="Directory page for Dubai Chamber of commerce">
     <meta name="author" content="Vera Antamanova">
-    <meta property="og:title" content="Dubai Chamber of commerce">
+    <meta property="og:title" content="Directory page for Dubai Chamber of commerce">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://dubai.ae/">
     <meta property="og:url" content="https://vantamanova.github.io/wdd230/">
@@ -31,14 +31,19 @@
             <span class="slider round"></span>
         </label>
         <nav class="navigation">
-            <a href="#">Home</a>
+            <a href="index.html">Home</a>
             <a href="discover.html">Discover</a>
             <a href="#">Directory</a>
             <a href="join.html">Join</a>
         </nav>
     </header>
-    <main>
-        <div id="cards"></div>
+    <main class="directory">
+        <div class="menu">
+            <button id="grid">⏹️Grid</button>
+            <button id="list">📄List</button>
+        </div>
+        <hr>
+        <div class="cards grid"></div>
     </main>
     <footer>
         <p id="info"> 2024 Dubai Chamber | Vera Antamanova | WDD230 Project</p>
@@ -51,6 +56,7 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/darkmore.js"></script>
     <script src="scripts/directory.js"></script>
+    <script src="scripts/gridToList.js"></script>
 
 </body>
 

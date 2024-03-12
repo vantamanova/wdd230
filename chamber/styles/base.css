@@ -499,3 +499,94 @@ ul {
     padding: 20px;
     text-align: center;
 }
+
+
+/* ------------------ DIRECTORY PAGE ------------------ */
+
+.menu {
+    margin: 1rem auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+.menu button {
+    font-family: Montserrat;
+    padding: 1rem 2.5rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 5px;
+    align-items: center;
+}
+
+.grid section {
+    text-align: center;
+    background-color: #C1C6CA;
+}
+
+.grid img {
+    border: 1px solid #fff;
+    box-shadow: 0 0 10px #8C8C85;
+}
+
+.grid section>* {
+    margin: 0.1rem;
+}
+
+.grid h3 {
+    font-family: Montserrat;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list section {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.list section>* {
+    margin: 0 1rem;
+}
+
+.list section img {
+    display: none;
+}
+
+.list section h3 {
+    grid-column: 1/4;
+    font-size: 1rem;
+    font-family: Domine;
+    margin-bottom: 10px;
+}
+
+.list section:nth-child(even) {
+    background-color: #C1C6CA;
+}
+
+.list section a {
+    text-align: left;
+}
+
+section p {
+    font-family: Domine;
+    font-size: smaller;
+}
+
+section a {
+    font-family: Domine;
+    font-size: 0.85rem;
+    color: navy;
+
+}
+
+.cards img {
+    height: 75px;
+    width: auto;
+    max-width: 100%;
+}

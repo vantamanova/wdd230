@@ -92,4 +92,9 @@
         grid-column: 1/4;
     }
 
+    .cards,
+    .menu {
+        grid-column: 1/4;
+    }
+
 }
