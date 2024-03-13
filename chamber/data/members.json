@@ -7,7 +7,7 @@
             "phone":"+971 4 123 4567",
             "website":"www.techwavesolutions.ae",
             "image":"techWaveSolutions.webp",
-            "membership ":"Gold",
+            "membership":"Gold",
             "date":"March 02, 2024"
         },
 
@@ -17,7 +17,7 @@
             "phone":"+971 4 234 5678",
             "website":"www.ecoscapeinnovations.com",
             "image":"ecoScapeInnovations.webp",
-            "membership ":"Silver",
+            "membership":"Silver",
             "date":"July 5, 2023"
         },
 
@@ -27,7 +27,7 @@
             "phone":"+971 4 345 6789",
             "website":"www.skylineventures.ae",
             "image":"skylineVentures.webp",
-            "membership ":"Bronze",
+            "membership":"Bronze",
             "date":"November 18, 2023"
         },
 
@@ -37,7 +37,7 @@
             "phone":"+971 4 456 7890",
             "website":"www.globaltechsolutions.ae",
             "image":"globalTechSolutions.webp",
-            "membership ":"Gold",
+            "membership":"Gold",
             "date":"September 9, 2023"
         },
 
@@ -47,7 +47,7 @@
             "phone":"+971 4 567 8901",
             "website":"www.greenenergyinnovations.com",
             "image":"greenEnergyInnovations.webp",
-            "membership ":"Bronze",
+            "membership":"Bronze",
             "date":"May 20, 2023"
         },
 
@@ -57,7 +57,7 @@
             "phone":"+971 4 678 9012",
             "website":"www.blueskylogistics.ae",
             "image":"blueSkyLogistics.webp",
-            "membership ":"Silver",
+            "membership":"Silver",
             "date":"February 3, 2024"
         },
 
@@ -67,7 +67,7 @@
             "phone":"+971 4 789 0123",
             "website":"www.infinitetechsolutions.ae",
             "image":"infiniteTechSolutions.webp",
-            "membership ":"Gold",
+            "membership":"Gold",
             "date":"August 14, 2023"
         },
 
@@ -77,7 +77,7 @@
             "phone":"+971 4 890 1234",
             "website":"www.naturefusion.ae",
             "image":"natureFusion.webp",
-            "membership ":"NP",
+            "membership":"NP",
             "date":"June 30, 2023"
         },
 
@@ -87,7 +87,7 @@
             "phone":"+971 4 901 2345",
             "website":"www.xceleratetechnologies.ae",
             "image":"xcelerateTechnologies.webp",
-            "membership ":"Silver",
+            "membership":"Silver",
             "date":"October 8, 2023"
         },
 
@@ -107,7 +107,7 @@
             "phone":"+971 4 123 4567",
             "website":"www.azureinnovations.ae",
             "image":"azureInnovations.webp",
-            "membership ":"Gold",
+            "membership":"Gold",
             "date":"December 22, 2023"
         },
 
@@ -117,7 +117,7 @@
             "phone":"+971 4 234 5678",
             "website":"www.swiftcargologistics.ae",
             "image":"swiftCargoLogistics.webp",
-            "membership ":"Bronze",
+            "membership":"Bronze",
             "date":"January 9, 2024"
         }
 

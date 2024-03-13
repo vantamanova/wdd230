@@ -23,12 +23,14 @@ function displayData(companies) {
         const name = document.createElement("h3");
         const adress = document.createElement("p");
         const phone = document.createElement("p");
+        const membership = document.createElement("p");
         const email = document.createElement("a");
 
         name.textContent = company.name;
         adress.textContent = company.address;
         phone.textContent = company.phone;
         email.textContent = company.website;
+        membership.textContent = company.membership;
 
         logo.setAttribute('src', `images/${company.image}`);
         logo.setAttribute('alt', `${company.name} logo`);
@@ -41,6 +43,7 @@ function displayData(companies) {
         card.appendChild(adress);
         card.appendChild(phone);
         card.appendChild(email);
+        card.appendChild(membership);
 
         cards.appendChild(card);
     });
