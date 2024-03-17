@@ -1,13 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Domine&family=Montserrat:wght@800&display=swap');
 
 :root {
-    --fontHeading: "Montserrat";
-    --fontParagraph: "Domine";
-    --backgroundColour:
+    /*--------------Fonts--------------*/
+    --fontAccent: "Playfair Display SC";
+    --fontMain: "Domine";
+
+    /*--------------Colors--------------*/
+    --color1: #000000;
+    --color2: #8C8C85;
+    --color3: #C1D0D7;
+    --color4: #C1C6CA;
+    --color5: #FFFFFF;
+
+    /*--------------RGB Colors--------------*/
+    --backgroundColor: rgb(193, 208, 215, 0.4);
+    --blackTransparent: rgba(0, 0, 0, .3);
+    --whiteTransparent: rgb(255, 255, 255, .5);
+    --lightGrey: rgb(140, 140, 133, .3);
+    --formBackground: rgb(140, 140, 133, .1);
 }
 
 body,
-header {
+header,
+.hero,
+#weather_img {
     margin: auto;
     max-width: 1500px;
 }
@@ -20,7 +36,7 @@ header {
 h1 {
     grid-column: 1/2;
     padding-left: 20px;
-    font-family: var(--fontHeading);
+    font-family: var(--fontMain);
 }
 
 /* The switch - the box around the slider */
@@ -49,7 +65,7 @@ h1 {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: var(--color2);
     -webkit-transition: .4s;
     transition: .4s;
 }
@@ -61,17 +77,17 @@ h1 {
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: white;
+    background-color: var(--color5);
     -webkit-transition: .4s;
     transition: .4s;
 }
 
 input:checked+.slider {
-    background-color: #81adc2;
+    background-color: var(--color3);
 }
 
 input:focus+.slider {
-    box-shadow: 0 0 1px #81adc2;
+    box-shadow: 0 0 1px var(--color3);
 }
 
 input:checked+.slider:before {
@@ -90,19 +106,19 @@ input:checked+.slider:before {
 }
 
 .dark-mode {
-    background-color: black;
+    background-color: var(--color1);
 }
 
 .dark-mode h1 {
-    color: white;
+    color: var(--color5);
 }
 
 #menu {
     font-size: 1.5rem;
-    border: 1px solid rgba(0, 0, 0, .3);
+    border: 1px solid var(--blackTransparent);
     padding: 3px 7px 6px;
-    background-color: rgb(193, 198, 202, 0.3);
-    color: black;
+    background-color: var(--backgroundColor);
+    color: var(--color1);
     position: absolute;
     top: 1rem;
     right: 1rem;
@@ -125,8 +141,8 @@ nav {
     display: flex;
     flex-direction: column;
     list-style: none;
-    background-color: #C1D0D7;
-    color: black;
+    background-color: var(--backgroundColor);
+    color: var(--color1);
 }
 
 .navigation a {
@@ -135,12 +151,12 @@ nav {
     text-align: center;
     text-decoration: none;
     color: black;
-    font-family: Domine;
+    font-family: var(--fontMain);
 }
 
 .navigation a:hover {
-    background-color: #8C8C85;
-    color: white;
+    background-color: var(--color2);
+    color: var(--color5);
 }
 
 .open a {
@@ -153,11 +169,11 @@ nav {
 
 a {
     margin: auto;
-    font-family: Domine;
+    font-family: var(--fontMain);
     padding: 5px;
     text-align: center;
     text-decoration: none;
-    color: black;
+    color: var(--color1);
 }
 
 main {
@@ -170,8 +186,6 @@ main {
     grid-column: 1/2;
     grid-row: 1/2;
     width: 100%;
-    margin: auto;
-    max-width: 1500px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -187,28 +201,29 @@ picture img {
 
 .action_call {
     padding: 10px;
-    background-color: white;
-    color: black;
+    background-color: var(--color5);
+    color: var(--color1);
     grid-column: 1/2;
     grid-row: 1/2;
-    box-shadow: 2px 2px 10px 1px #C1C6CA;
+    box-shadow: 2px 2px 10px 1px var(--color4);
+    border-radius: 5px;
 }
 
 section,
 .images {
     width: 80%;
-    background-color: white;
+    background-color: var(--color5);
     margin: auto;
-    border: 1px solid black;
+
     margin-bottom: 30px;
-    box-shadow: 2px 2px 10px 1px #C1C6CA;
+    box-shadow: 2px 2px 10px 1px var(--color4);
 }
 
 .events {
     grid-column: 1/2;
     grid-row: 2/3;
     text-align: center;
-    font-family: Domine;
+    font-family: var(--fontMain);
     display: flex;
     flex-direction: column;
 }
@@ -224,7 +239,7 @@ section,
     width: 60%;
     margin: auto;
     padding: 0;
-    box-shadow: 2px 2px 10px 1px #8C8C85;
+    box-shadow: 2px 2px 10px 1px var(--color4);
 }
 
 .events h4,
@@ -249,26 +264,24 @@ section,
     flex-direction: column;
     grid-column: 1/2;
     grid-row: 3/4;
-    background-color: rgb(193, 208, 215, 0.5);
+    background-color: var(--backgroundColor);
 }
 
 #weather_img {
     display: none;
     grid-column: 1/2;
     width: 70%;
-    margin: auto;
     margin-left: 50px;
-    max-width: 1500px;
     margin-top: 50px;
     margin-bottom: 50px;
-    box-shadow: 2px 2px 10px 1px black;
+    box-shadow: 2px 2px 10px 1px var(--color4);
 }
 
 .weather div {
-    background-color: white;
+    background-color: var(--whiteTransparent);
     width: 80%;
     margin: auto;
-    box-shadow: 2px 2px 10px 1px #8C8C85;
+    box-shadow: 2px 2px 10px 1px var(--color4);
     margin: 20px;
     padding: 10px;
 }
@@ -292,20 +305,20 @@ section,
 
 .weather div p {
     text-align: left;
-    font-family: Domine;
+    font-family: var(--fontMain);
     margin-bottom: 0;
 }
 
 
 label {
     display: block;
-    font-family: Domine;
+    font-family: var(--fontMain);
 }
 
 input,
 label {
     margin: 0.1rem;
-    font-family: Domine;
+    font-family: var(--fontMain);
     box-shadow: none;
 }
 
@@ -324,20 +337,25 @@ h2 {
     width: 100%;
     text-align: center;
     margin-bottom: 50px;
-    font-family: Montserrat;
+    font-family: var(--fontMain);
 }
 
 h3 {
-    font-family: Montserrat;
+    font-family: var(--fontMain);
 }
 
 .card {
     text-align: center;
-    font-family: Domine;
+    font-family: var(--fontMain);
+
 }
 
 .card div {
     padding-bottom: 30px;
+}
+
+.card section {
+    background-color: var(--backgroundColor);
 }
 
 footer {
@@ -345,8 +363,8 @@ footer {
     flex-direction: column;
     text-align: center;
     padding-top: 50px;
-    font-family: Domine;
-    background-color: rgb(193, 208, 215, 0.8);
+    font-family: var(--fontMain);
+    background-color: var(--color4);
 }
 
 footer p {
@@ -395,7 +413,7 @@ ul {
 .month {
     padding: 70px 10%;
     width: 80%;
-    background: #81adc2;
+    background: var(--color4);
     text-align: center;
 }
 
@@ -406,10 +424,11 @@ ul {
 }
 
 .month ul li {
-    color: white;
+    color: var(--color1);
     font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 3px;
+    font-family: var(--fontMain);
 }
 
 /* Previous button inside month header */
@@ -428,21 +447,23 @@ ul {
 .weekdays {
     margin: 0;
     padding: 10px 0;
-    background-color: #ddd;
+    background-color: var(--lightGrey);
 }
 
 .weekdays li {
     display: inline-block;
     width: 13%;
-    color: #666;
+    color: var(--color2);
     text-align: center;
 }
 
 /* Days (1-31) */
 .days {
     padding: 10px 0;
-    background: #eee;
+    background: var(--color5);
     margin: 0;
+    border: 1px solid var(--lightGrey);
+    border-top: none;
 }
 
 .days li {
@@ -452,14 +473,14 @@ ul {
     text-align: center;
     margin-bottom: 5px;
     font-size: 12px;
-    color: #777;
+    color: var(--color2);
 }
 
 /* Highlight the "current" day */
 .days li .active {
     padding: 5px;
-    background: #81adc2;
-    color: white !important
+    background: var(--color4);
+    color: var(--color5) !important
 }
 
 /* ------------------ FORM F1------------------ */
@@ -476,7 +497,7 @@ ul {
 .f1 label {
     display: block;
     padding: 1rem;
-    color: black;
+    color: var(--color1);
     font-size: .9rem;
     width: 100%;
 }
@@ -486,30 +507,30 @@ ul {
 .f1 input[type=email],
 .f1 select,
 .f1 textarea {
-    background-color: #eee;
+    background-color: var(--formBackground);
     display: block;
-    border: solid 1px #999;
+    border: solid 1px var(--lightGrey);
     border-radius: 6px;
     padding: .8rem;
-    color: #555;
+    color: var(--color2);
     width: 100%;
     max-width: 400px;
     appearance: none;
     text-align: left;
-    box-shadow: inset 2px 2px 5px #BABECC, inset -5px -5px 10px white;
     transition: all 0.2s ease-in-out;
 }
 
 .f1 input[type="submit"] {
     border: none;
-    background-color: #81adc2;
-    color: white;
+    background-color: var(--blackTransparent);
+    color: var(--color5);
     border-radius: 6px;
     padding: .8rem;
     width: 100%;
     margin: -1rem 2rem;
     max-width: 400px;
-    box-shadow: 1px 1px 4px #999;
+    box-shadow: 1px 1px 4px var(--color4);
+    text-align: center;
 }
 
 .f1 input:required {
@@ -528,18 +549,21 @@ ul {
 
 .membership section {
     padding: 20px;
+    background-color: var(--formBackground);
 }
 
 .membership ul {
     list-style: circle;
 }
 
-.dark-mode .membership h2 {
-    color: white;
+.dark-mode .membership section {
+    color: var(--color5);
 }
 
-.dark-mode .f1 label {
-    color: white;
+.dark-mode .membership h2,
+.dark-mode .f1 label,
+.dark-mode .cards p {
+    color: var(--color5);
 }
 
 .record {
@@ -559,7 +583,7 @@ ul {
 }
 
 .menu button {
-    font-family: Montserrat;
+    font-family: var(--fontMain);
     padding: 1rem 2.5rem;
 }
 
@@ -572,12 +596,11 @@ ul {
 
 .grid section {
     text-align: center;
-    background-color: #C1C6CA;
+    background-color: var(--formBackground);
 }
 
 .grid img {
-    border: 1px solid #fff;
-    box-shadow: 0 0 10px #8C8C85;
+    box-shadow: 0 0 10px var(--color4);
 }
 
 .grid section>* {
@@ -585,17 +608,16 @@ ul {
 }
 
 .grid h3 {
-    font-family: Montserrat;
+    font-family: var(--fontMain);
 }
 
-.list {
+.list,
+.list section {
     display: flex;
     flex-direction: column;
 }
 
 .list section {
-    display: flex;
-    flex-direction: column;
     padding: 10px;
 }
 
@@ -610,27 +632,27 @@ ul {
 .list section h3 {
     grid-column: 1/4;
     font-size: 1rem;
-    font-family: Domine;
+    font-family: var(--fontMain);
     margin-bottom: 10px;
 }
 
 .list section:nth-child(even) {
-    background-color: #C1C6CA;
+    background-color: var(--backgroundColor);
 }
 
 .list section a {
     text-align: left;
 }
 
-section p {
-    font-family: Domine;
+.cards p {
+    font-family: var(--fontMain);
     font-size: smaller;
 }
 
-section a {
-    font-family: Domine;
+.cards a {
+    font-family: var(--fontMain);
     font-size: 0.85rem;
-    color: navy;
+    color: var(--color2);
 
 }
 

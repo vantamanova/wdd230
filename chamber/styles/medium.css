@@ -1,4 +1,24 @@
 @media (min-width: 600px) {
+    :root {
+        /*--------------Fonts--------------*/
+        --fontAccent: "Playfair Display SC";
+        --fontMain: "Domine";
+
+        /*--------------Colors--------------*/
+        --color1: #000000;
+        --color2: #8C8C85;
+        --color3: #C1D0D7;
+        --color4: #C1C6CA;
+        --color5: #FFFFFF;
+
+        /*--------------RGB Colors--------------*/
+        --backgroundColor: rgb(193, 208, 215, 0.4);
+        --blackTransparent: rgba(0, 0, 0, .3);
+        --whiteTransparent: rgb(255, 255, 255, .5);
+        --lightGrey: rgb(140, 140, 133, .3);
+        --formBackground: rgb(140, 140, 133, .1);
+    }
+
     main {
         grid-template-columns: 1fr 1fr;
     }
@@ -9,8 +29,8 @@
     }
 
     .dark-mode .card section {
-        background-color: white;
-        color: black;
+        background-color: var(--color5);
+        color: var(--color1);
     }
 
     .hero,
@@ -29,7 +49,7 @@
         grid-row: 2/3;
         height: 100%;
         display: flex;
-        background-color: white;
+        background-color: var(--color5);
     }
 
     #weather_img {
@@ -57,10 +77,6 @@
         grid-row: 5/6;
     }
 
-    .card section {
-        background-color: rgb(193, 208, 215, 0.4);
-    }
-
     .images {
         margin: auto;
         grid-column: 2/3;
@@ -68,7 +84,7 @@
     }
 
     .images img:hover {
-        box-shadow: 0 0 50px black;
+        box-shadow: 0 0 50px var(--color1);
     }
 
     .membership h2 {
