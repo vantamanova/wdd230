@@ -38,6 +38,7 @@
         </nav>
     </header>
     <main>
+
         <div class="hero">
             <picture>
                 <source srcset="images/hero_small.webp" media="(max-width: 500px)">
@@ -48,27 +49,52 @@
         <a class="action_call" href="join.html">Join Chamber</a>
 
         <section class="events">
-            <h3>Events Section</h3>
-            <h4>Join us for Iftar</h4>
+            <div class="banner">
+                <h4> Join us for weekly Meet and Greet this Wednesday at 7 p.m.</h4>
+                <img src="images/banner.webp" alt="banner image">
+            </div>
+
+            <div class="mainEvents">
+                <h4>The Chamber of Commerce's Annual Iftar Gatherings</h4>
+                <p>We invite you to join us for a momentous occasion as we come together to celebrate the spirit
+                    of unity, compassion, and community during the holy month of Ramadan.
+                </p>
+
+                <p>Join us as we break bread and share in the blessings of Iftar, fostering connections and camaraderie
+                    amongst our esteemed members and partners.
+                </p>
+
+                <p>
+                    This gathering presents a unique opportunity to network,
+                    exchange ideas, and strengthen business relationships in a warm and welcoming atmosphere.
+                </p>
+                <img src="images/ramadan.webp" alt="Ramadan image">
+            </div>
+
+
+
 
             <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
         </section>
 
         <section class="weather">
             <img id="weather_img" src="images/weather_img.webp" alt="Weather image">
-            <h3>Weather</h3>
-            <div class="weatherDiv"></div>
 
-            <h3>Forecast</h3>
-            <div class="forecastDiv">
+            <div class="weatherDiv">
+                <h3>Weather</h3>
             </div>
 
-            <h3>WindChill</h3>
+            <div class="forecastDiv">
+                <h3>Forecast</h3>
+            </div>
+
+
             <div class="windchill">
+                <h3>WindChill</h3>
                 <label for="temperature">Temperature:</label>
-                <input type="text" id="temperature" name="temperature" />
+                <input type="text" id="temperature" name="temperature">
                 <label for="windspeed">Windspeed:</label>
-                <input type="text" id="windspeed" name="windspeed" />
+                <input type="text" id="windspeed" name="windspeed">
                 <p><button class="button" type="button">Check</button></p>
                 <p><span class="label">Wind Chill: </span><span class="sectiontext windChill"></span></p>
             </div>
@@ -124,6 +150,7 @@
     <script src="scripts/windchill.js"></script>
     <script src="scripts/visits.js"></script>
     <script src="scripts/weather.js"></script>
+    <script src="scripts/banner.js"></script>
 
 </body>
 
