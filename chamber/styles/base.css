@@ -667,3 +667,7 @@ ul {
     width: auto;
     max-width: 100%;
 }
+
+.dark-mode .list p {
+    color: var(--color1);
+}
