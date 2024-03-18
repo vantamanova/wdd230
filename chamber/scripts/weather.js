@@ -37,7 +37,7 @@ function displayResultes(data) {
         const currentTemp = document.createElement('p');
         const humidity = document.createElement('p');
 
-        currentTemp.innerHTML = `Temprature: ${data.main.temp.toFixed(0)}&deg;F`;
+        currentTemp.innerHTML = `Temperature: ${data.main.temp.toFixed(0)}&deg;F`;
         const iconsrc = `https://openweathermap.org/img/w/${event.icon}.png`;
         let desc = event.description;
         let words = desc.split(" ");

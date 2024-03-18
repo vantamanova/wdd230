@@ -615,6 +615,7 @@ ul {
 .list section {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .list section {
@@ -653,7 +654,12 @@ ul {
     font-family: var(--fontMain);
     font-size: 0.85rem;
     color: var(--color2);
+}
 
+.list p,
+.list a,
+.list h3 {
+    text-align: left;
 }
 
 .cards img {
