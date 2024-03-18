@@ -3,6 +3,6 @@ const dateNow = new Date().getDay();
 
 console.log(dateNow);
 
-if ((dateNow == 0) || (dateNow == 2) || (dateNow == 3)) {
+if ((dateNow == 1) || (dateNow == 2) || (dateNow == 3)) {
     banner.classList.add("show");
 }
