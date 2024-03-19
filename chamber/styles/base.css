@@ -512,7 +512,7 @@ ul {
     border: solid 1px var(--lightGrey);
     border-radius: 6px;
     padding: .8rem;
-    color: var(--color2);
+    color: var(--color1);
     width: 100%;
     max-width: 400px;
     appearance: none;

@@ -7,7 +7,6 @@ async function getData(directoryURL) {
     const response = await fetch(directoryURL);
     const data = await response.json();
 
-    console.log(data.companies);
     filterData(data.companies);
 }
 
@@ -21,7 +20,6 @@ function filterData(companies) {
     // Loop until get 3 different companies in the array
     while (companiesList.length < 3) {
         const randomCompany = companies[Math.floor(Math.random() * result.length)];
-        console.log(randomCompany);
 
         // Checking if the company is in array
         if (companiesList.includes(randomCompany)) {
