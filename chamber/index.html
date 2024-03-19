@@ -26,10 +26,7 @@
         <button id="menu"></button>
 
         <!-- Rounded switch -->
-        <label class="switch">
-            <input type="checkbox">
-            <span class="slider round"></span>
-        </label>
+
         <nav class="navigation">
             <a class="activePage" href="#">Home</a>
             <a href="discover.html">Discover</a>
@@ -40,6 +37,10 @@
     <main>
 
         <div class="hero">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
             <picture>
                 <source srcset="images/hero_small.webp" media="(max-width: 500px)">
                 <source srcset="images/hero_medium.webp" media="(max-width: 1000px)">
@@ -50,8 +51,8 @@
 
         <section class="events">
             <div class="banner">
-                <button id="close"></button>
-                <h3> Join us for weekly Meet and Greet this Wednesday at 7 p.m.</h3>
+                <h3> <span><button id="close"></button></span> Join us for weekly Meet and Greet this Wednesday at 7
+                    p.m.</h3>
                 <img src="images/banner.webp" alt="Meet and Greet banner image">
             </div>
 
@@ -72,10 +73,7 @@
                 <img src="images/ramadan.webp" alt="Ramadan image" loading="lazy">
             </div>
 
-
-
-
-            <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+            <!-- <p><span class="label">Number of Visits: </span><span class="visits"></span></p> -->
         </section>
 
         <section class="weather">
