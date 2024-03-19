@@ -671,3 +671,26 @@ ul {
 .dark-mode .list p {
     color: var(--color1);
 }
+
+.activePage {
+    border: .5px solid var(--color4);
+    border-radius: 10px;
+    background-color: var(--backgroundColor);
+}
+
+#close {
+    font-size: 1.5rem;
+    border: 1px solid var(--blackTransparent);
+    padding: 3px 7px 6px;
+    background-color: var(--backgroundColor);
+    color: var(--color1);
+    position: static;
+}
+
+#close::before {
+    content: "✕";
+}
+
+.hide {
+    display: none;
+}
