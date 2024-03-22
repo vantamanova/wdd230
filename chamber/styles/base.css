@@ -688,7 +688,9 @@ ul {
 .dark-mode .sidebar,
 .dark-mode .images,
 .dark-mode .cards,
-.dark-mode .list .company {
+.dark-mode .list .company,
+.dark-mode .record,
+.dark-mode footer {
     background-color: var(--color1);
     color: var(--color5);
 }
