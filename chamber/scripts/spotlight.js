@@ -39,6 +39,7 @@ getData(directoryURL);
 function displayData(companies) {
     companies.forEach(company => {
         const newSection = document.createElement("section");
+        newSection.classList.add("class", "test");
         const name = document.createElement("h3");
         const newHr = document.createElement("hr");
         const newDiv = document.createElement("div");

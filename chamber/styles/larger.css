@@ -165,4 +165,12 @@
         grid-column: 1/4;
     }
 
+    .images {
+        grid-column: 2/4;
+    }
+
+    .images img {
+        width: 70%;
+        height: auto;
+    }
 }

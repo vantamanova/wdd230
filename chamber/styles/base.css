@@ -41,11 +41,10 @@ h1 {
 
 /* The switch - the box around the slider */
 .switch {
-
+    position: absolute;
     display: inline-block;
     width: 60px;
     height: 34px;
-    position: absolute;
     top: 4rem;
     right: 0.5rem;
 }
@@ -103,14 +102,6 @@ input:checked+.slider:before {
 
 .slider.round:before {
     border-radius: 50%;
-}
-
-.dark-mode {
-    background-color: var(--color1);
-}
-
-.dark-mode h1 {
-    color: var(--color5);
 }
 
 #menu {
@@ -556,16 +547,6 @@ ul {
     list-style: circle;
 }
 
-.dark-mode .membership section {
-    color: var(--color5);
-}
-
-.dark-mode .membership h2,
-.dark-mode .f1 label,
-.dark-mode .cards p {
-    color: var(--color5);
-}
-
 .record {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -668,10 +649,6 @@ ul {
     max-width: 100%;
 }
 
-.dark-mode .list p {
-    color: var(--color1);
-}
-
 .activePage {
     border: .5px solid var(--color4);
     border-radius: 10px;
@@ -693,4 +670,25 @@ ul {
 
 .hide {
     display: none;
+}
+
+/* -------------------- Dark mode--------------------- */
+.dark-mode,
+.dark-mode .events,
+.dark-mode .weather,
+.dark-mode .weatherDiv,
+.dark-mode .windchill,
+.dark-mode .forecastDiv,
+.dark-mode .card,
+.dark-mode .card section,
+.dark-mode .membership section,
+.dark-mode .membership h2,
+.dark-mode .f1 label,
+.dark-mode h1,
+.dark-mode .sidebar,
+.dark-mode .images,
+.dark-mode .cards,
+.dark-mode .list .company {
+    background-color: var(--color1);
+    color: var(--color5);
 }
