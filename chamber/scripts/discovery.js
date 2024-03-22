@@ -20,7 +20,7 @@ if (daysSinceLastVisit == 0) {
 
 }
 // Less than one day
-else if ((daysSinceLastVisit > 0) & (daysSinceLastVisit < 1)) {
+else if ((daysSinceLastVisit > 0) && (daysSinceLastVisit < 1)) {
     visits.textContent = `Back so soon! Awesome!`;
 
 }
@@ -34,7 +34,7 @@ visitsNum += 1;
 
 // Store new value
 localStorage.setItem('numVisits-ls', visitsNum);
-localStorage.setItem('lastVisit-ls', lastVisit);
+localStorage.setItem('lastVisit-ls', today);
 
 
 
