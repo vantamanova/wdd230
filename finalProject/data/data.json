@@ -8,14 +8,14 @@
                 [
                     {
                         "type":"Reservation",
-                        "halfDay":"20",
-                        "fullDay":"30"
+                        "halfDay":"$20",
+                        "fullDay":"$30"
                     },
 
                     {
                         "type":"Walk-In",
-                        "halfDay":"25",
-                        "fullDay":"35"
+                        "halfDay":"$25",
+                        "fullDay":"$35"
                     }
                 ]
         },
@@ -27,14 +27,14 @@
                 [
                     {
                         "type":"Reservation",
-                        "halfDay":"30",
-                        "fullDay":"40"
+                        "halfDay":"$30",
+                        "fullDay":"$40"
                     },
 
                     {
                         "type":"Walk-In",
-                        "halfDay":"35",
-                        "fullDay":"45"
+                        "halfDay":"$35",
+                        "fullDay":"$45"
                     }
                 ]
         },
@@ -46,14 +46,14 @@
                 [
                     {
                         "type":"Reservation",
-                        "halfDay":"40",
-                        "fullDay":"50"
+                        "halfDay":"$40",
+                        "fullDay":"$50"
                     },
 
                     {
                         "type":"Walk-In",
-                        "halfDay":"45",
-                        "fullDay":"55"
+                        "halfDay":"$45",
+                        "fullDay":"$55"
                     }
                 ]
         },
@@ -65,14 +65,14 @@
                 [
                     {
                         "type":"Reservation",
-                        "halfDay":"50",
-                        "fullDay":"70"
+                        "halfDay":"$50",
+                        "fullDay":"$70"
                     },
 
                     {
                         "type":"Walk-In",
-                        "halfDay":"60",
-                        "fullDay":"80"
+                        "halfDay":"$60",
+                        "fullDay":"$80"
                     }
                 ]
         },
@@ -84,14 +84,14 @@
                 [
                     {
                         "type":"Reservation",
-                        "halfDay":"70",
-                        "fullDay":"100"
+                        "halfDay":"$70",
+                        "fullDay":"$100"
                     },
 
                     {
                         "type":"Walk-In",
-                        "halfDay":"85",
-                        "fullDay":"125"
+                        "halfDay":"$85",
+                        "fullDay":"$125"
                     }
                 ]
         },
@@ -103,14 +103,14 @@
                 [
                     {
                         "type":"Reservation",
-                        "halfDay":"60",
-                        "fullDay":"85"
+                        "halfDay":"$60",
+                        "fullDay":"$85"
                     },
 
                     {
                         "type":"Walk-In",
-                        "halfDay":"70",
-                        "fullDay":"90"
+                        "halfDay":"$70",
+                        "fullDay":"$90"
                     }
                 ]
         }
