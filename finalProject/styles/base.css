@@ -1,0 +1,284 @@
+:root {
+    /*--------------Fonts--------------*/
+    --fontAccent: "";
+    --paragraph: "";
+    --header: "";
+
+    /*--------------Colors--------------*/
+    --darkBackground: #675D51;
+    --lightBackground: #EFF1F1;
+    --shadows: #D3CFC5;
+    --accent1: #B8CAD6;
+    --accent2: #A0031D;
+
+    /*--------------RGB Colors--------------*/
+    --backgroundColor: rgb(193, 208, 215, 0.4);
+    --blackTransparent: rgba(0, 0, 0, .3);
+    --whiteTransparent: rgb(255, 255, 255, .5);
+    --lightGrey: rgb(140, 140, 133, .3);
+    --formBackground: rgb(140, 140, 133, .1);
+}
+
+/* ---------------------------------- Message with close button ---------------------------------- */
+.message {
+    display: block;
+    width: 100%;
+    border: 1px solid var(--shadows);
+    background-color: var(--accent1);
+    text-align: center;
+}
+
+.message p {
+    margin: 0;
+}
+
+.hide {
+    display: none;
+}
+
+#close {
+    border: 1px solid var(--blackTransparent);
+    padding: 3px 7px 6px;
+    background-color: var(--backgroundColor);
+    color: var(--color1);
+    position: static;
+}
+
+#close::before {
+    content: "✕";
+}
+
+/* ---------------------------------- Body Header Hero ---------------------------------- */
+body,
+header,
+#hero,
+nav {
+    margin: auto;
+    max-width: 1500px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+h1 {
+    grid-column: 1/2;
+    padding-left: 20px;
+    font-family: var(--header);
+}
+
+/* ---------------------------------- Menu button ---------------------------------- */
+.menu {
+    font-size: 1.5rem;
+    border: 1px solid var(--blackTransparent);
+    padding: 3px 7px 6px;
+    background-color: var(--backgroundColor);
+    color: var(--color1);
+    position: absolute;
+    top: 3rem;
+    right: 1rem;
+}
+
+.menu::before {
+    content: "☰";
+}
+
+.menu.open::before {
+    content: "✕";
+}
+
+.messageClosed {
+    top: 1rem;
+}
+
+/* ---------------------------------- Navigation ---------------------------------- */
+.navigation {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: var(--lightBackground);
+    color: var(--darkBackground);
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-family: var(--fontMain);
+}
+
+.navigation a:hover {
+    background-color: var(--color2);
+    color: var(--color5);
+}
+
+.open a {
+    display: block;
+}
+
+/* Do I need it?*/
+a {
+    margin: auto;
+    font-family: var(--fontMain);
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--color1);
+}
+
+main {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* ---------------------------------- Hero ---------------------------------- */
+
+#hero {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+picture {
+    width: 100%;
+    height: auto;
+}
+
+picture img {
+    width: 100%;
+}
+
+/* ---------------------------------- Rentals Div ---------------------------------- */
+
+.rentals {
+    display: flex;
+    flex-direction: column;
+}
+
+.rentals p {
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* ---------------------------------- Action Call ---------------------------------- */
+#action_call {
+    border: 1px solid var(--shadows);
+    padding: 10px 50px;
+    margin: auto;
+    font-size: 1.2rem;
+}
+
+.rentals div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 20px;
+    grid-gap: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+.rentalItems h4 {
+    text-align: center;
+}
+
+.rentalItems img {
+    width: 100%;
+    margin: auto;
+}
+
+
+/* ---------------------------------- Weather Div ---------------------------------- */
+
+#weather {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+#weather h2 {
+    text-align: center;
+}
+
+#weather p,
+figure img,
+figure figcaption {
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.weatherDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.weatherDiv h3,
+.forecastDiv h3 {
+    text-align: center;
+}
+
+.weatherDiv figure {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 100%;
+    border: 1px solid var(--shadows);
+}
+
+.forecastDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 50px;
+}
+
+.forecastDiv h3 {
+    grid-column: 1/4;
+}
+
+.forecastDiv p {
+    border: 1px solid var(--shadows);
+    padding: 0;
+}
+
+/* ---------------------------------- Footer ---------------------------------- */
+
+footer {
+    background-color: var(--darkBackground);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: var(--lightBackground);
+    font-size: .9rem;
+    text-align: center;
+}
+
+footer p,
+footer a {
+    grid-column: 1/4;
+}
+
+footer p:nth-child(1) {
+    margin-bottom: 0;
+}
+
+#social {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: row;
+    row-gap: 10px;
+    padding-bottom: 20px;
+}
+
+#social img {
+    width: 60%;
+}
