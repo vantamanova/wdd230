@@ -346,3 +346,95 @@ tbody tr:nth-child(odd) {
     padding-left: 200px;
     padding-right: 200px;
 }
+
+/* ---------------------------------- Reservation Page ---------------------------------- */
+
+.agreementInfo {
+    text-align: left;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: var(--lightBackground);
+}
+
+/* ---------------------------------- Form ---------------------------------- */
+
+
+.f1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 80%;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+.f1 label {
+    display: block;
+    padding: 1rem;
+    color: var(--color1);
+    font-size: .9rem;
+    width: 100%;
+}
+
+.f1 input[type=text],
+.f1 input[type=tel],
+.f1 input[type=email],
+.f1 input[type=date],
+.f1 select,
+.f1 textarea {
+    background-color: var(--lightBackground);
+    display: block;
+    border: solid 1px var(--lightGrey);
+    border-radius: 6px;
+    padding: .8rem;
+    color: var(--color1);
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+    text-align: left;
+    transition: all 0.2s ease-in-out;
+}
+
+.f1 input[type="submit"] {
+    border: none;
+    background-color: var(--accent1);
+    color: var(--textOnWhite);
+    border-radius: 6px;
+    padding: .8rem;
+    width: 100%;
+    margin: -1rem 2rem;
+    max-width: 400px;
+    box-shadow: 1px 1px 4px var(--shadows);
+    text-align: center;
+    margin-top: 50px;
+}
+
+.f1 input:required {
+    border-left: solid 3px var(--accent2);
+}
+
+.f1 input:required:valid {
+    border-left: solid 3px var(--accent1);
+}
+
+.membership h2 {
+    margin-top: 100px;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.membership section {
+    padding: 20px;
+    background-color: var(--formBackground);
+}
+
+.membership ul {
+    list-style: circle;
+}
+
+.record {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+    text-align: center;
+}
