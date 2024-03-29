@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots Home Page</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="icon" href="favicon.ico">
+    <meta name="description" content="Home Page of Scoots website">
+    <meta name="author" content="Vera Antamanova">
+    <meta property="og:title" content="Scoots: Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/hero.jpg">
+    <meta property="og:url" content="https://vantamanova.github.io/wdd230/finalProject/index.html">
+</head>
+
+<body>
+    <header>
+        <h1>~Scoots~</h1>
+    </header>
+    <button class="menu noMessage"></button>
+    <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="rentals.html">Rentals</a>
+        <a href="reservations.html">Reservations</a>
+        <a href="#">Contact</a>
+    </nav>
+    <main>
+
+        <h3>HELP & CONTACTS</h3>
+        <p>Our company has two physical rental locations on Cozumel. One is near the Playa del Carmen-Cozumel Ferry dock
+            in el Centro de Cozumel and the other is near the Terminal Puerta Maya further south along the coast which
+            caters to the cruise lines and patrons.</p>
+        <section class="contactInfo">
+            <h4>Scoots Cozumel (El Centro)</h4>
+
+            <p>Address: Avenida Rafael E. Melgar entre Calle 1 y 2, El Centro, Cozumel, Quintana Roo, Mexico </p>
+            <p>Phone: +52 987 123 4567</p>
+            <p>Email: info@scootscozumel.com</p>
+            <p>www.scootscozumel.com</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14947.488780455362!2d-86.95703826840585!3d20.511464819820166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cebd031b81%3A0x1d4d43952273f214!2sFERRY%20TO%20PLAYA%20DEL%20CARMEN!5e0!3m2!1sru!2sae!4v1711704806413!5m2!1sru!2sae"
+                title="Playa del Carmen-Cozumel Ferry dock" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+
+        <section class="contactInfo">
+            <h4>Scoots Cozumel (Puerta Maya)</h4>
+
+            <p>Address: Carretera Costera Sur Km 4.5, Col. Zona Hotelera Sur, Cozumel, Quintana Roo, Mexico </p>
+            <p>Phone: +52 987 345 6789</p>
+            <p>Email: info@puertamayascoots.com</p>
+            <p>www.scootscozumel.com</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3737.7378528839654!2d-86.97461387196654!3d20.475957493436702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e57491a71c81d%3A0x6933058e58e0ee3d!2sPuerta%20Maya%20Cruise%20Ship%20Maritime%20Terminal!5e0!3m2!1sru!2sae!4v1711704907125!5m2!1sru!2sae"
+                title="Terminal Puerta Maya" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+
+        <section class="contactUs">
+            <h3>CONTACT US</h3>
+            <form method="get" action="thankyou.html" class="f1 f2">
+                <label>Name* <input type="text" id="fname" name="fname" required></label>
+                <label>Email* <input type="email" id="email" name="email" required></label>
+                <label>Comments <textarea id="comments" name="comments"></textarea></label>
+                <input type="submit" value="Send request">
+            </form>
+        </section>
+
+    </main>
+    <footer>
+        <p> 2024 Dubai Chamber | Vera Antamanova | WDD230 Project</p>
+        <a href="#">Attributions</a>
+        <p id="lastModified"></p>
+        <div id="social">
+            <a href="https://www.facebook.com/vera.pinchuk.7" target="_blank">
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://www.instagram.com/confusing.ph" target="_blank">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+            <a href="https://ru.pinterest.com/antamanova/_created/" target="_blank">
+                <img src="images/pinterest.png" alt="pinterest icon">
+            </a>
+        </div>
+    </footer>
+    <script src="scripts/hamburgermenu.js"></script>
+    <script src="scripts/lastmodified.js"></script>
+
+</body>
+
+</html>

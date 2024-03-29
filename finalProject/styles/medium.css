@@ -1,0 +1,18 @@
+@media (min-width: 600px) {
+    :root {
+        /*--------------Fonts--------------*/
+        --fontAccent: "";
+        --paragraph: "";
+        --header: "";
+
+        /*--------------Colors--------------*/
+        --darkBackground: #675D51;
+        --lightBackground: #EFF1F1;
+        --darkTransparent: rgb(103, 93, 81, .1);
+        --shadows: #D3CFC5;
+        --accent1: #B8CAD6;
+        --accent2: #A0031D;
+        --textOnWhite: black;
+        --textOnBlack: white;
+    }
+}
