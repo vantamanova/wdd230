@@ -17,14 +17,10 @@
 </head>
 
 <body>
-    <div class="message">
-        <p>The max temperature for the today is <span class="maxTemp"></span> <span><button id="close"></button></span>
-        </p>
-    </div>
     <header>
         <h1>~Scoots~</h1>
     </header>
-    <button class="menu"></button>
+    <button class="menu noMessage"></button>
     <nav class="navigation">
         <a href="index.html">Home</a>
         <a href="#">Rentals</a>
@@ -32,42 +28,42 @@
         <a href="#">Contact</a>
     </nav>
     <main>
-        <h2>Available rental options</h2>
+        <div class="rentalInfo">
+            <h2>Available rental options</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cumque vero cupiditate. Dolore distinctio
+                accusantium corporis neque blanditiis nesciunt ea aspernatur beatae, quaerat dolores corrupti sapiente
+                voluptatem doloribus! A, veniam?</p>
+        </div>
+
         <table>
-            <caption>Table 1: Account Feature Comparison</caption>
+            <caption>Rental Prices: April 2024</caption>
             <thead>
                 <tr>
-                    <th colspan="4" scope="colgroup">Max Rental Pricing</th>
+                    <th colspan="6" scope="colgroup">Max Rental Pricing</th>
                 </tr>
                 <tr>
                     <th scope="col"></th>
-                    <th scope="col">Basic</th>
-                    <th scope="col">Premium</th>
-                    <th scope="col">Deluxe</th>
+                    <th scope="col"></th>
+                    <th scope="col">Reservation</th>
+                    <th scope="col"></th>
+                    <th scope="col">Walk-In</th>
+                    <th scope="col"></th>
+                </tr>
+
+                <tr>
+                    <th scope="col">Rental Type</th>
+                    <th scope="col">Max. Persons</th>
+                    <th scope="col">Half Day (3 hrs)</th>
+                    <th scope="col">Full Day</th>
+                    <th scope="col">Half Day (3 hrs)</th>
+                    <th scope="col">Full Day</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>Feature 1</td>
-                    <td>✔️</td>
-                    <td>✔️</td>
-                    <td>✔️</td>
-                </tr>
-                <tr>
-                    <td>Feature 2</td>
-                    <td>❌</td>
-                    <td>✔️</td>
-                    <td>✔️</td>
-                </tr>
-                <tr>
-                    <td>Feature 3</td>
-                    <td>❌</td>
-                    <td>❌</td>
-                    <td>✔️</td>
-                </tr>
+
             </tbody>
         </table>
-
+        <a class="action_call rent" href="join.html">Rent</a>
     </main>
     <footer>
         <p> 2024 Dubai Chamber | Vera Antamanova | WDD230 Project</p>

@@ -7,9 +7,12 @@
     /*--------------Colors--------------*/
     --darkBackground: #675D51;
     --lightBackground: #EFF1F1;
+    --darkTransparent: rgb(103, 93, 81, .1);
     --shadows: #D3CFC5;
     --accent1: #B8CAD6;
     --accent2: #A0031D;
+    --textOnWhite: black;
+    --textOnBlack: white;
 
     /*--------------RGB Colors--------------*/
     --backgroundColor: rgb(193, 208, 215, 0.4);
@@ -88,7 +91,8 @@ h1 {
     content: "✕";
 }
 
-.messageClosed {
+.messageClosed,
+.noMessage {
     top: 1rem;
 }
 
@@ -172,11 +176,13 @@ picture img {
 }
 
 /* ---------------------------------- Action Call ---------------------------------- */
-#action_call {
+.action_call {
     border: 1px solid var(--shadows);
+    box-shadow: 1px 2px 10px 1px var(--accent1);
     padding: 10px 50px;
     margin: auto;
     font-size: 1.2rem;
+    margin-bottom: 20px;
 }
 
 .rentals div {
@@ -288,6 +294,15 @@ footer p:nth-child(1) {
 /* ---------------------------------- Rentals Page ---------------------------------- */
 /* ---------------------------------- Table ---------------------------------- */
 
+.rentalInfo {
+    text-align: center;
+    border-bottom: 2px solid var(--shadows);
+    border-top: 2px solid var(--shadows);
+    margin-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
 table {
     margin: 10px auto;
     border: thin solid var(--shadows);
@@ -298,13 +313,13 @@ table {
 caption {
     padding: 10px;
     caption-side: bottom;
-    color: var(--back);
+    color: var(--textOnWhite);
     font-size: .85rem;
 }
 
 tr:first-child th {
-    background-color: var(--back);
-    color: var(--forelight);
+    background-color: var(--accent1);
+    color: var(--textOnWhite);
 }
 
 th,
@@ -314,8 +329,8 @@ td {
 }
 
 th {
-    background-color: var(--back2);
-    font-size: larger;
+    background-color: var(--darkTransparent);
+
 }
 
 td {
@@ -323,5 +338,11 @@ td {
 }
 
 tbody tr:nth-child(odd) {
-    background-color: var(--zebra);
+    background-color: var(--accent1);
+}
+
+.rent {
+    margin-bottom: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
 }
