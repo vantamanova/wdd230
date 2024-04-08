@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
 :root {
     /*--------------Fonts--------------*/
-    --fontAccent: "";
-    --paragraph: "";
-    --header: "";
+    --fontAccent: "Libre Baskerville";
+    --paragraph: "Libre Baskerville";
+    --header: "League Spartan";
 
     /*--------------Colors--------------*/
     --darkBackground: #675D51;
@@ -16,6 +18,21 @@
 }
 
 /* ---------------------------------- Message with close button ---------------------------------- */
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--header);
+    text-transform: uppercase;
+}
+
+p,
+a,
+li {
+    font-family: var(--paragraph);
+    font-size: .8rem;
+}
+
 .message {
     display: block;
     width: 100%;
@@ -27,6 +44,8 @@
 
 .message p {
     margin: 0;
+    font-family: var(--paragraph);
+    font-size: .8rem;
 }
 
 .hide {
@@ -62,7 +81,8 @@ header {
 h1 {
     grid-column: 1/2;
     padding-left: 20px;
-    font-family: var(--header);
+    font-family: var(--paragraph);
+    text-transform: uppercase;
 }
 
 /* ---------------------------------- Menu button ---------------------------------- */
@@ -109,10 +129,11 @@ h1 {
     text-decoration: none;
     color: black;
     font-family: var(--paragraph);
+    font-size: 1rem;
 }
 
 .navigation a:hover {
-    background-color: var(--color2);
+    background-color: var(--darkTransparent);
     color: var(--color5);
 }
 
@@ -120,7 +141,6 @@ h1 {
     display: block;
 }
 
-/* Do I need it?*/
 a {
     margin: auto;
     font-family: var(--paragraph);
@@ -163,14 +183,22 @@ picture img {
     flex-direction: column;
 }
 
-.rentals h3 {
+.rentals h2 {
+    padding-left: 30px;
+    padding-right: 30px;
     text-align: center;
+    font-family: var(--paragraph);
+    font-style: italic;
+    font-weight: 100;
+    margin-bottom: 0;
 }
 
 .rentals p {
     margin: auto;
     padding: 30px;
     text-align: center;
+    font-family: var(--paragraph);
+    font-size: .8rem;
 }
 
 a:hover img {
@@ -184,8 +212,9 @@ a:hover img {
     padding: 10px 50px;
     margin: auto;
     font-family: var(--paragraph);
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 60px;
     background-color: var(--lightBackground);
 }
 
@@ -198,13 +227,15 @@ a:hover img {
     margin: auto;
 }
 
-.rentalItems h4 {
-    text-align: center;
-}
-
 .rentalItems img {
     width: 100%;
     margin: auto;
+}
+
+.rentalItems h4 {
+    font-family: var(--paragraph);
+    font-size: .5rem;
+    text-align: center;
 }
 
 /* ---------------------------------- facilities Div ---------------------------------- */
@@ -217,6 +248,9 @@ a:hover img {
 .facilities h2 {
     text-align: center;
     grid-column: 1/3;
+    font-family: var(--paragraph);
+    font-style: italic;
+    font-weight: 100;
 }
 
 .facilities p {
@@ -226,7 +260,9 @@ a:hover img {
 
 .facilities h3 {
     text-align: center;
-    font-size: small;
+    font-family: var(--paragraph);
+    font-weight: 300;
+    font-size: .8rem;
 }
 
 .facilities img {
@@ -245,6 +281,9 @@ a:hover img {
 
 #weather h2 {
     text-align: center;
+    font-family: var(--paragraph);
+    font-style: italic;
+    font-weight: 100;
 }
 
 .weatherImg {
@@ -258,18 +297,29 @@ a:hover img {
 figure img,
 figure figcaption {
     margin: auto;
-    padding: 30px;
+    padding: 20px;
     text-align: left;
+    font-family: var(--paragraph);
 }
 
 .weatherDiv {
     display: flex;
     flex-direction: column;
+    font-family: var(--paragraph);
+    font-size: .8rem;
 }
 
 .weatherDiv h3,
-.forecastDiv h3 {
+.forecastDiv h4 {
     text-align: center;
+    font-family: var(--paragraph);
+    font-style: italic;
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+.forecastDiv h4 {
+    font-size: 1rem;
 }
 
 .weatherDiv figure {
@@ -283,7 +333,8 @@ figure figcaption {
 .forecastDiv {
     background-color: var(--lightBackground);
     width: 80%;
-    font-size: .9rem;
+    font-family: var(--paragraph);
+    font-size: .8rem;
     margin: 30px auto 50px auto;
     border: 2px solid var(--shadows);
 }
@@ -313,7 +364,7 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
     color: var(--lightBackground);
     font-family: var(--paragraph);
-    font-size: .9rem;
+    font-size: .8rem;
     text-align: center;
 }
 
@@ -467,11 +518,12 @@ tbody tr:nth-child(odd) {
 .f1 input[type=tel],
 .f1 input[type=email],
 .f1 input[type=date],
+.f1 input[type=number],
 .f1 select,
 .f1 textarea {
     background-color: var(--lightBackground);
     display: block;
-    border: solid 1px var(--lightGrey);
+    border: 1px solid var(--darkTransparent);
     border-radius: 6px;
     padding: .8rem;
     color: var(--color1);
@@ -566,10 +618,27 @@ iframe {
     border: 1px solid var(--shadows);
     border-radius: 20px;
     box-shadow: 2px 2px 10px 1px var(--shadows);
-    background-color: var(--darkTransparent);
+    background-color: var(--lightBackground);
     padding-left: 30px;
     padding-right: 30px;
     margin-bottom: 50px;
+}
+
+.f2 input[type=text],
+.f2 input[type=email],
+.f2 textarea {
+    background-color: var(--textOnBlack);
+    border: 1px solid var(--darkBackground);
+
+}
+
+.f2 input:required {
+    border-left: solid 3px var(--accent2);
+}
+
+.f2 input:required:valid {
+    border-left: solid 3px var(--accent1);
+
 }
 
 .f2 {
