@@ -653,7 +653,7 @@ iframe {
 
 .contactUs {
     margin: auto;
-    width: 100%;
+    width: 70%;
     border: 1px solid var(--shadows);
     border-radius: 20px;
     box-shadow: 2px 2px 10px 1px var(--shadows);
@@ -661,6 +661,12 @@ iframe {
     padding-left: 30px;
     padding-right: 30px;
     margin-bottom: 50px;
+}
+
+.contactUs h3 {
+    font-family: var(--fontAccent);
+    font-weight: 100;
+    font-style: italic;
 }
 
 .f2 input[type=text],
@@ -681,9 +687,21 @@ iframe {
 }
 
 .f2 {
-    margin-top: 10px
+    margin-top: 10px;
+    padding-left: 0;
+}
+
+.f2 label {
+    padding-left: 0;
 }
 
 .f2 textarea {
     height: 100px;
+}
+
+.f2 input[type="submit"] {
+    padding: .5rem 1rem;
+    margin: -1rem 1rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
