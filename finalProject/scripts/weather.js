@@ -60,12 +60,36 @@ function displayResultes(data) {
 const forecastDiv = document.querySelector(".forecastDiv");
 
 function getForecast(data) {
-    const newP = document.createElement("p");
+    data.weather.forEach(event => {
+        const weatherIcon = document.createElement("img");
+        const captionDesc = document.createElement('figcaption');
+        const figure = document.createElement('figure');
+        const currentTemp = document.createElement('p');
+        const humidity = document.createElement('p');
 
-    const temp = data.main.temp.toFixed(0);
+        currentTemp.innerHTML = `Temperature: ${data.main.temp.toFixed(0)}&deg;F`;
+        const iconsrc = `https://openweathermap.org/img/w/${event.icon}.png`;
+        let desc = event.description;
+        let words = desc.split(" ");
 
-    newP.textContent = `${temp}°F`;
-    forecastDiv.appendChild(newP);
+        for (let i = 0; i < words.length; i++) {
+            words[i] = words[i][0].toUpperCase() + words[i].substr(1);
+        }
+
+        words = words.join(" ");
+    
+        weatherIcon.setAttribute("src", iconsrc);
+        weatherIcon.setAttribute("alt", desc);
+        captionDesc.textContent = `${words}`;
+        humidity.textContent = `Humidity: ${data.main.humidity}`;
+       
+        figure.appendChild(weatherIcon);
+        figure.appendChild(captionDesc);
+        figure.appendChild(currentTemp);
+        figure.appendChild(humidity);
+
+        forecastDiv.appendChild(figure);
+    });
 
 }
 

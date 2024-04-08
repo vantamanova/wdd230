@@ -163,10 +163,18 @@ picture img {
     flex-direction: column;
 }
 
+.rentals h3 {
+    text-align: center;
+}
+
 .rentals p {
     margin: auto;
-    padding: 20px;
+    padding: 30px;
     text-align: center;
+}
+
+a:hover img {
+    transform: scale(1.1);
 }
 
 /* ---------------------------------- Action Call ---------------------------------- */
@@ -178,6 +186,7 @@ picture img {
     font-family: var(--paragraph);
     font-size: 1.2rem;
     margin-bottom: 20px;
+    background-color: var(--lightBackground);
 }
 
 .rentals div {
@@ -198,6 +207,33 @@ picture img {
     margin: auto;
 }
 
+/* ---------------------------------- facilities Div ---------------------------------- */
+.facilities {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+}
+
+.facilities h2 {
+    text-align: center;
+    grid-column: 1/3;
+}
+
+.facilities p {
+    grid-column: 1/3;
+    text-align: center;
+}
+
+.facilities h3 {
+    text-align: center;
+    font-size: small;
+}
+
+.facilities img {
+    width: 80%;
+    margin: auto;
+}
+
 
 /* ---------------------------------- Weather Div ---------------------------------- */
 
@@ -211,12 +247,19 @@ picture img {
     text-align: center;
 }
 
+.weatherImg {
+    width: 50%;
+    float: left;
+    margin: 7px 20px 7px 0;
+
+}
+
 #weather p,
 figure img,
 figure figcaption {
     margin: auto;
-    padding: 20px;
-    text-align: center;
+    padding: 30px;
+    text-align: left;
 }
 
 .weatherDiv {
@@ -238,17 +281,27 @@ figure figcaption {
 }
 
 .forecastDiv {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-bottom: 50px;
+    background-color: var(--lightBackground);
+    width: 80%;
+    font-size: .9rem;
+    margin: 30px auto 50px auto;
+    border: 2px solid var(--shadows);
 }
 
-.forecastDiv h3 {
-    grid-column: 1/4;
+.forecastDiv figure {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 100%;
+    border-bottom: 1px solid var(--shadows);
+    border-top: 1px solid var(--shadows);
 }
 
-.forecastDiv p {
-    border: 1px solid var(--shadows);
+.forecastDiv figure img {
+    padding: 0;
+}
+
+.forecastDiv figure figcaption {
     padding: 0;
 }
 
@@ -291,11 +344,47 @@ footer p:nth-child(1) {
 /* ---------------------------------- Table ---------------------------------- */
 
 .rentalInfo {
-    text-align: center;
+    text-align: left;
     border-bottom: 2px solid var(--shadows);
     border-top: 2px solid var(--shadows);
     margin-bottom: 50px;
     padding-left: 30px;
+    padding-right: 30px;
+}
+
+.rentalInfo h2 {
+    padding-left: 50px;
+    padding-right: 30px;
+}
+
+.card {
+    text-align: left;
+    border: 2px solid var(--shadows);
+    margin-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.card div {
+    display: flex;
+    flex-direction: row;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.card img {
+    width: 20%;
+    margin: 10px auto 20px auto;
+    box-shadow: 0 0 10px var(--shadows);
+}
+
+.card h4 {
+    padding-left: 50px;
+    padding-right: 30px;
+}
+
+.card ul {
+    padding-left: 70px;
     padding-right: 30px;
 }
 
