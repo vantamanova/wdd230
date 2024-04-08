@@ -1,9 +1,9 @@
-@media (min-width: 700px) {
+@media (min-width: 600px) {
     :root {
         /*--------------Fonts--------------*/
-        --fontAccent: "";
-        --paragraph: "";
-        --header: "";
+        --fontAccent: "Libre Baskerville";
+        --paragraph: "Libre Baskerville";
+        --header: "League Spartan";
 
         /*--------------Colors--------------*/
         --darkBackground: #675D51;
@@ -14,5 +14,21 @@
         --accent2: #A0031D;
         --textOnWhite: black;
         --textOnBlack: white;
+    }
+
+    /* ---------------------------------- Index Page ---------------------------------- */
+
+    .rentals p,
+    .facilities p,
+    #weather p {
+        font-size: .9rem;
+        line-height: 2;
+    }
+
+    .rentals h2,
+    .facilities h2,
+    #weather h2,
+    .weatherDiv h3 {
+        font-weight: 900;
     }
 }

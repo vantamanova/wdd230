@@ -31,6 +31,7 @@ a,
 li {
     font-family: var(--paragraph);
     font-size: .8rem;
+    line-height: 1.5;
 }
 
 .message {
@@ -216,6 +217,10 @@ a:hover img {
     text-transform: uppercase;
     margin-bottom: 60px;
     background-color: var(--lightBackground);
+}
+
+.action_call:hover {
+    transform: scale(1.05);
 }
 
 .rentals div {
