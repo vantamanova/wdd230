@@ -410,9 +410,8 @@ footer p:nth-child(1) {
     padding-right: 30px;
 }
 
-.rentalInfo h2 {
-    padding-left: 50px;
-    padding-right: 30px;
+.agreementInfo h2 {
+    padding: 40px 30px 0px 50px;
     font-family: var(--fontAccent);
     font-style: italic;
     font-weight: 100;
