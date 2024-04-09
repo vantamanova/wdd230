@@ -454,7 +454,8 @@ footer p:nth-child(1) {
 
 /* ---------------------------------- Table ---------------------------------- */
 table {
-    margin: 10px auto;
+    width: 90%;
+    margin: 20px auto 50px auto;
     border: thin solid var(--shadows);
     box-shadow: 0 0 10px var(--shadows);
     border-collapse: collapse;
@@ -490,12 +491,6 @@ td {
 
 tbody tr:nth-child(odd) {
     background-color: var(--accent1);
-}
-
-.rent {
-    margin-bottom: 50px;
-    padding-left: 200px;
-    padding-right: 200px;
 }
 
 /* ---------------------------------- Reservation Page ---------------------------------- */
@@ -667,6 +662,11 @@ iframe {
     font-family: var(--fontAccent);
     font-weight: 100;
     font-style: italic;
+}
+
+.contactUs p {
+    padding-left: 0;
+    font-family: var(--paragraph);
 }
 
 .f2 input[type=text],
