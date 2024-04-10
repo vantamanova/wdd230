@@ -704,3 +704,14 @@ iframe {
 .activePage {
     box-shadow: 2px 2px 10px 1px var(--shadows);
 }
+
+/* ---------------------------------- Thank You Page ---------------------------------- */
+
+.thankyou {
+    border: solid 3px var(--shadows);
+    margin: 30px auto;
+}
+
+.thankyou h3 {
+    text-align: center;
+}
