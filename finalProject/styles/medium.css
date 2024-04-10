@@ -1,4 +1,4 @@
-@media (min-width: 800px) {
+@media (min-width: 600px) {
     :root {
         /*--------------Fonts--------------*/
         --fontAccent: "Libre Baskerville";
@@ -103,6 +103,32 @@
     .forecastDiv {
         margin-left: 20px;
         width: 100%;
+    }
+
+    /* ---------------------------------- Footer ---------------------------------- */
+    footer {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .info {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin: 20px;
+    }
+
+    .info a,
+    .info p {
+        padding: 0;
+        margin: 0;
+    }
+
+    #social {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        width: 90%;
+        word-spacing: 2px;
+        line-height: .8rem;
     }
 
     /* ---------------------------------- Rentals Page ---------------------------------- */
