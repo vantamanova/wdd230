@@ -240,7 +240,7 @@ a:hover img {
     margin: auto;
 }
 
-.rentalItems h4 {
+.rentalItems h3 {
     font-family: var(--paragraph);
     font-size: .5rem;
     text-align: center;
