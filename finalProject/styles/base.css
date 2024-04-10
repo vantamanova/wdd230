@@ -46,7 +46,8 @@ li {
 .message p {
     margin: 0;
     font-family: var(--paragraph);
-    font-size: .8rem;
+    font-size: .9rem;
+    text-transform: uppercase;
 }
 
 .hide {
@@ -704,4 +705,8 @@ iframe {
     margin: -1rem 1rem;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.activePage {
+    box-shadow: 2px 2px 10px 1px var(--shadows);
 }

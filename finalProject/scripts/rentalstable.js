@@ -7,7 +7,6 @@ async function getData(directoryURL) {
     const response = await fetch(directoryURL);
     const data = await response.json();
 
-    console.log(data.rentals);
     displayData(data.rentals);
 }
 

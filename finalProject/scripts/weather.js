@@ -96,7 +96,7 @@ function getForecast(data) {
 function getMaxTemp(data) {
     var maxTemp = document.querySelector(".maxTemp");
 
-    maxTemp.innerHTML = `Temperature: ${data.main.temp_max.toFixed(0)}&deg;F`;
+    maxTemp.innerHTML = `${data.main.temp_max.toFixed(0)}&deg;F`;
 
 }
 
